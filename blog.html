@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title>Blog</title>
+        <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="css/form-blog.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="icon-img" src="Image/JR.jpg"/>
+                </a>
+                <button 
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggle01"
+                aria-control="navbarToggle01"
+                aria-expanded="false"
+                aria-label="Toggle Navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggle01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" arial-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a 
+                            class="bar-active nav-link active text-blue fw-bold" 
+                            href="#"
+                            arial-current="page">Add Member</a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn bg-blue text-white px-2">Contact Me</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid d-flex justify-content-center aliggn-items-center mt-4">
+            <div class="container-form edit">
+                <form onsubmit="addBlog(event)">
+                    <h2>Add New Member</h2>
+                    <div class="mb-3">
+                        <label for="input-tittle" class="form-label">Name of Member</label>
+                        <input type="text" id="input-tittle" class="form-control">
+                    </div>
+                    <div class="d-flex">
+                        <div class="mb-3">
+                            <label for="input-start-date" class="form-label">Start Date</label>
+                            <input type="date" id="input-start-date" class="form-control paddingstart">
+                        </div>
+                        <div>
+                            <label for="input-end-date" class="form-label">End Date</label>
+                            <input type="date" id="input-end-date" class="form-control paddingstart">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="input-description" class="form-label">Description</label>
+                        <textarea id="input-description" class="form-control"></textarea>
+                    </div>
+                    <div>
+                        <label>Ability</label>
+                        <div class="grid gap-3">
+                            <div class="d-flex">
+                                <div class="p-2 g-col-6">
+                                    <input type="checkbox" id="check-human">
+                                    <label>Human</label>
+                                </div>
+                                <div class="p-2 g-col-6">
+                                    <input type="checkbox" id="check-animal">
+                                    <label>Animal</label>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-2 g-col-6">
+                                    <input type="checkbox" id="check-demon">
+                                    <label>Demon</label>
+                                </div>
+                                <div class="p-2 g-col-6">
+                                    <input type="checkbox" id="check-robot">
+                                    <label>Robot</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="input-image" class="form-label">Uploud Image</label>
+                        <input type="file" id="input-image" class="form-control">
+                    </div>
+                    <div class="d-grip gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn bt-blue text-aqua">
+                            Post Blog
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="content" class="pt-5">
+            <div class="container responsive border">
+                <div>
+                    <div class="blog-image margin pt-4 ps-4">
+                        <img src="Image/zoro.jpg" alt="blog_img"/>
+                    </div>
+                    <div class="pt-3">
+                        <div class="text-box fs-6">
+                            <h1 class="fs-5">
+                                <a 
+                                style="color: red;" 
+                                href="blog-detail.html" 
+                                target="_blank">Zoro is a user of 3 Swords</a>
+                            </h1>
+                            <div style="color: gray; font-size: 15px;">Duration :</div>
+                        <div> 1 Month </div>
+                            <div class="detail-blog-content">
+                                20 May 2020 20:20 WIB - Roronoa Zoro
+                            </div>
+                            <div>Ability</div>
+                            <img class="img-icon-sword" src="Image/sword.png">
+                            <p>
+                                Zoro has a stern, serious, and distanced personality, but unlike Robin, he often reacts in a goofy and exaggerated comic style due to his short-tempered and impatient attitude.                          </p>
+                            <a href="https://www.instagram.com/">
+                                <img
+                                style="
+                                width: 5%; image-"
+                                src="Image/IG.png"
+                                />
+                            </a>
+                            <a href="https://www.facebook.com/">
+                                <img
+                            style="
+                            width: 5%;"
+                            src="Image/FB.png"
+                            />
+                            </a>
+                            <a href="https://www.twitter.com/">
+                                <img
+                                style="
+                                width: 5%;"
+                                src="Image/TWT.png"
+                                />
+                            </a>
+                            <a href="https://www.twitter.com/">
+                                <img
+                                style="
+                                width: 5%;"
+                                src="Image/YT.png"
+                                />
+                            </a>
+                            <div class="d-column">
+                                <button class="bg-danger px-4">Edit Post</button>
+                                <buttom class="bg-gray px-4">Delete Post</buttom>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+        crossorigin="anonymous"></script>
+        <script src="js/blog.js"></script>
+    </body>
+</html>
